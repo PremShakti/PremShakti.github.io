@@ -1,66 +1,167 @@
-import "../App.css"
-import { Box, Flex, Text } from "@chakra-ui/react";
 
+import { Box, Flex, Text } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-
 import { GiHamburgerMenu } from "react-icons/gi";
-import { togleOn, togleoF } from "../action";
+import styled from "styled-components";
+import { useState } from "react";
+// import  {Link}  from "react-scroll"
+import { Link as ScrollLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 
 
 const Navbar = () => {
-    const dispatch=useDispatch();
-   const myState=useSelector((state)=>state.myreducer.navbarFixd)
-   const togle=useSelector((store)=>store.myreducer.togalMenuebar)
-console.log(togle)
+  const dispatch = useDispatch();
+  const myState = useSelector((state) => state.myreducer.navbarFixd)
+  const [togel, setTogel] = useState(false);
+// console.log(myState)
 
-const handletogle=()=>{
-    if(togle===false){
-        dispatch(togleOn())
-    }else if(togle===true){
-        dispatch(togleoF())
+  const handletogle = () => {
+    if (togel == false) {
+      setTogel(true)
+    } else if (togel == true) {
+      setTogel(false)
     }
+  }
+
+console.log(myState)
+  return (
+    <DIV myState={myState} >
+
+      <header  id="nav-menu">
+        <Flex h={"80px"} align={"center"} >
+
+          <Flex w={"50%"} h={"100%"} align={"center"} pl={"5%"}>
+            <Text>Prem</Text>
+          </Flex>
+
+          <Flex w={"50%"} h={"100%"} align={"center"}  >
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"} ><ScrollLink to="hero" spy={true} smooth={true} duration={500} >Home</ScrollLink></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><ScrollLink to="contact" spy={true} smooth={true} duration={500} >Contact</ScrollLink></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><ScrollLink to="about" spy={true} smooth={true} duration={500} >About</ScrollLink></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><ScrollLink to="myskils" spy={true} smooth={true} duration={500}>My skils</ScrollLink></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><ScrollLink to="section1" spy={true} smooth={true} duration={500} >Download Resume</ScrollLink></Flex>
+          </Flex>
+        </Flex>
+
+
+      </header>
+
+      <header className="upDown" >
+        <Flex h={"80px"} align={"center"} >
+
+          <Flex w={"50%"} h={"100%"} align={"center"} pl={"5%"}>
+            <Text>Prem</Text>
+          </Flex>
+
+          <Flex w={"50%"} h={"100%"} align={"center"}  >
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"} ><ScrollLink to="hero" spy={true} smooth={true} duration={500}>Home</ScrollLink></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><ScrollLink to="contact" spy={true} smooth={true} duration={500}>Contact</ScrollLink></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><ScrollLink to="about" spy={true} smooth={true} duration={500}>About</ScrollLink></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><ScrollLink to="myskils" spy={true} smooth={true} duration={500}>My skils</ScrollLink></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><ScrollLink to="myskils" spy={true} smooth={true} duration={500}>Download Resume</ScrollLink></Flex>
+          </Flex>
+        </Flex>
+
+
+      </header>
+
+      {/* nav for phone view */}
+
+      <div className="navBarforPhone">
+        <nav className="navPhoneLogo">Prem</nav>
+      </div>
+
+      <div className="navBarforPhone upDownForphone">
+        <nav className="navPhoneLogo">Prem</nav>
+      </div>
+
+
+
+
+    </DIV>
+  );
 }
 
 
-    return (
-        <>
-        
-            <header className={myState?"header":null}>
-                <Flex  h={"80px"}  align={"center"} >
+const DIV = styled.div`
+    width: 100%;
 
-                    <Flex w={"50%"} h={"100%"} align={"center"} pl={"5%"}>
-                        <Text>Prem</Text>
-                    </Flex>
-
-                    <Flex w={"50%"} h={"100%"} align={"center"}  >
-                        <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"} ><NavLink style={{ textDecoration: "none" }}>Home</NavLink></Flex>
-                        <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><NavLink style={{ textDecoration: "none" }}>Contact</NavLink></Flex>
-                        <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><NavLink style={{ textDecoration: "none" }}>About</NavLink></Flex>
-                        <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={ "1px solid black"}><NavLink style={{ textDecoration: "none" }}>Fire Me An Email</NavLink></Flex>
-                        <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><NavLink  style={{ textDecoration: "none" ,color:"black" }}>Download Resume</NavLink></Flex>
-                    </Flex>
-                </Flex>
-
-
-            </header>
-
-            {/* nav for phone view */}
-
-            <div className="navBarforPhone">
-                <nav className="navPhoneLogo">Prem</nav>
-                <nav className="navPhoneMenue">
-                    <button onClick={handletogle} className="navPhoneBtn">MENUE <GiHamburgerMenu/> </button>
-                </nav>
-
-            </div>
-            <div className="leftTogleMenue" style={{ transform: togle? "translateY(-100%)":"translateY(0%)"}}></div>
-
-
-
-        </>
-    );
+    .navBarforPhone{
+  display: none;
 }
+    header{
+  position: absolute;
+  background: transparent;
+  width: 100%;
+  z-index: 100000;
+  border-bottom: 1px solid;
+  }
+  
+.upDown{
+  width: 100%;
+  position: fixed;
+  background-color:#5aff7f;
+  transform: translateY(-100%);
+  transition-property: transform opacity;
+  transition-duration: 800ms;
+  transform: ${(props)=>props.myState?"translateY(0%)":"translateY(-100%)"};
+  opacity: ${(props)=>props.myState?"100%":"0%"} ;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+
+@media screen and (max-width:855px) {
+    body{
+      overflow-x: hidden;
+    }
+    
+    .navBarforPhone{
+      width: 100%;
+      display: block;
+      border: 1px solid red;
+      
+    }
+
+.upDownForphone{
+  width: 100%;
+  position: fixed;
+  z-index: 30000;
+  background-color:#5aff7f;
+  transform: translateY(-100%);
+  transition-property: transform opacity;
+  transition-duration: 800ms;
+  transform: ${(props)=>props.myState?"translateY(-100%)":"translateY(-200%)"};
+  opacity: ${(props)=>props.myState?"100%":"0%"} ;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+    header{
+      display: none;
+    }
+    .navPhoneLogo{
+      display: flex;
+      height: 49px;
+      background-color: #5aff7f;
+      color: black;
+      align-items: center;
+      padding-left: 10px;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  
+   
+
+  
+
+
+
+  }
+
+
+`
 
 
 
