@@ -8,7 +8,24 @@ import 'aos/dist/aos.css'
 
 
 const Hero=()=>{
-  const [width, setCondition] = useState("100%")
+  
+
+  const [text, setText] = useState('');
+  const fullText = 'Hii, I am Prem focusing on creating awsome websites';
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const interval = setInterval(() => {
+      if (currentIndex === fullText.length-1) {
+        clearInterval(interval);
+      } else {
+        setText((prevText) => prevText + fullText[currentIndex]);
+        currentIndex++;
+      }
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(()=>{
     AOS.init({duration:1000})
@@ -19,9 +36,9 @@ const Hero=()=>{
  <div className="firestImpresionWraper"  id="home">
 <div className="firstImpresion" >
   <Text fontSize='50px'>Full Staack Web Devloper</Text>
-  <Text fontSize="25px" w={"80%"}>Hi, I am Prem focusing on creating awsome websites</Text>
+  <Text fontSize="25px" w={"80%"}>{text}</Text>
 </div>
- <img src="https://drive.google.com/uc?id=1Jaq2cycUh8jqA4DeYH3BwVHDdTMQnyIG" alt="photo" className="ProfileIMG"  data-aos="zoom-in"  />
+ <img src="https://drive.google.com/uc?id=1Jaq2cycUh8jqA4DeYH3BwVHDdTMQnyIG" alt="photo" className="ProfileIMG"/>
  </div>
       
         </DIV>
@@ -35,7 +52,7 @@ const DIV=styled.div`
     position: absolute;
     right: 5%;
     bottom: 0px;
-    width: 500px;
+    width: 600px;
   }
  
 .firstImpresion{
@@ -65,7 +82,7 @@ const DIV=styled.div`
         background-color:#5aff7f;
     }
     .firstImpresion{
-      border:1px dotted red;
+      
        width:85%;
         padding:10px;
          position:absolute;

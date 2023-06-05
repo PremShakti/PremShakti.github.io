@@ -49,21 +49,22 @@ const DIV=styled.div`
 }
 
 .aboutdiscription{
-  /* width: 50%; */
-  /* border: 1px dotted white; */
+  width: 40%;
   border-radius: 10px;
   padding: 25px;
   margin: auto;
   margin-top: 30px;
-  /* margin-bottom: 30px; */
-  color: #616161;
+ 
+  color: black;
+ 
+  /* background-color: #5aff7f; */
   background-color: #ffffff;
-  /* color: white; */
-  
-  /* text-shadow: 2px 2px 1px white; */
+border: 1px solid green;
   line-height: 30px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  font-family: "Gill Sans", sans-serif
+  
+  font-family: "Gill Sans", sans-serif;
+  
+  
 }
 
 .aboutdiscription h2,h3,p{
@@ -73,10 +74,7 @@ hr{
   color: #5aff7f;
 
 }
-.aboutdiscription1{
-  width: 50%;
-  margin-bottom: 30px;
-}
+
 
 .educationcollage{
  display: flex;
@@ -84,6 +82,13 @@ hr{
  align-items: center;
  gap: 20px;
 
+}
+@media screen and (max-width:850px) {
+  .educationcollage{
+ display: grid;
+grid-template-columns: repeat(1,fr);
+
+}
 }
 
 `

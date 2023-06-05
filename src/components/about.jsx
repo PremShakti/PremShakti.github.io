@@ -35,25 +35,22 @@ const DIV = styled.div`
 }
 
 .aboutdiscription{
-  /* width: 50%; */
-  /* border: 1px dotted white; */
+ 
   border-radius: 10px;
   padding: 25px;
   margin: auto;
   margin-top: 30px;
-  /* margin-bottom: 30px; */
-  color: #616161;
+  color: #000000;
+  /* background-color:  #5aff7f; */
   background-color: #ffffff;
-  /* color: white; */
-  
-  /* text-shadow: 2px 2px 1px white; */
+border: 1px solid green;
   line-height: 30px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
   font-family: "Gill Sans", sans-serif
 }
 
 .aboutdiscription h2,h3,p{
-  text-align: center;
+  text-align: justify;
 }
 hr{
   color: #5aff7f;
@@ -62,5 +59,11 @@ hr{
 .aboutdiscription1{
   width: 50%;
   margin-bottom: 30px;
+}
+@media screen and (max-width:850px) {
+  .aboutdiscription1{
+  width: 90%;
+  margin-bottom: 30px;
+}
 }
 `

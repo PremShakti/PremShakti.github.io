@@ -5,8 +5,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { GiHamburgerMenu } from "react-icons/gi";
 import styled from "styled-components";
 import { useState } from "react";
-// import  {Link}  from "react-scroll"
-import { Link as ScrollLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import  {Link}  from "react-scroll"
+// import { Link as ScrollLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+// import Link from 'react-scroll'
 
 
 const Navbar = () => {
@@ -35,11 +36,11 @@ console.log(myState)
           </Flex>
 
           <Flex w={"50%"} h={"100%"} align={"center"}  >
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"} ><ScrollLink to="hero" spy={true} smooth={true} duration={500} >Home</ScrollLink></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><ScrollLink to="contact" spy={true} smooth={true} duration={500} >Contact</ScrollLink></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><ScrollLink to="about" spy={true} smooth={true} duration={500} >About</ScrollLink></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><ScrollLink to="myskils" spy={true} smooth={true} duration={500}>My skils</ScrollLink></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><ScrollLink to="section1" spy={true} smooth={true} duration={500} >Download Resume</ScrollLink></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"} ><Link to="home" spy={true} smooth={true} duration={500} >Home</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="contact" spy={true} smooth={true} duration={500} >Contact</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="about" spy={true} smooth={true} duration={500} >About</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="myskils" spy={true} smooth={true} duration={500}>My skils</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="section1" spy={true} smooth={true} duration={500} >Download Resume</Link></Flex>
           </Flex>
         </Flex>
 
@@ -54,11 +55,11 @@ console.log(myState)
           </Flex>
 
           <Flex w={"50%"} h={"100%"} align={"center"}  >
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"} ><ScrollLink to="hero" spy={true} smooth={true} duration={500}>Home</ScrollLink></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><ScrollLink to="contact" spy={true} smooth={true} duration={500}>Contact</ScrollLink></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><ScrollLink to="about" spy={true} smooth={true} duration={500}>About</ScrollLink></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><ScrollLink to="myskils" spy={true} smooth={true} duration={500}>My skils</ScrollLink></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><ScrollLink to="myskils" spy={true} smooth={true} duration={500}>Download Resume</ScrollLink></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"} ><Link to="home" spy={true} smooth={true} duration={500}>Home</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="contact" spy={true} smooth={true} duration={500}>Contact</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="about" spy={true} smooth={true} duration={500}>About</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="myskils" spy={true} smooth={true} duration={500}>My skils</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="myskils" spy={true} smooth={true} duration={500}>Download Resume</Link></Flex>
           </Flex>
         </Flex>
 
@@ -112,15 +113,17 @@ const DIV = styled.div`
 
 
 
-@media screen and (max-width:855px) {
-    body{
-      overflow-x: hidden;
+@media screen and (max-width:850px) {
+  width: 100%;
+  header{
+      display: none;
     }
+   
     
     .navBarforPhone{
       width: 100%;
       display: block;
-      border: 1px solid red;
+      
       
     }
 
@@ -138,9 +141,7 @@ const DIV = styled.div`
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-    header{
-      display: none;
-    }
+ 
     .navPhoneLogo{
       display: flex;
       height: 49px;
@@ -152,10 +153,6 @@ const DIV = styled.div`
       font-weight: bold;
     }
   
-   
-
-  
-
 
 
   }

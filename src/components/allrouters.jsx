@@ -1,6 +1,5 @@
 import { Route,Routes } from "react-router-dom";
 import About from "./about";
-// import Home from "./home";
 import Contact from "./contact";
 import { useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
@@ -21,7 +20,7 @@ const Allrouter=()=>{
   
       useEffect(() => {
           window.addEventListener("scroll", () => {
-              if (window.pageYOffset > 200) {
+              if (window.pageYOffset > 150) {
                 dispatch(sticky())
               } else {
                 dispatch(abslute())

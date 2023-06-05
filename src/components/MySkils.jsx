@@ -4,11 +4,14 @@ import AOS from "aos";
 import 'aos/dist/aos.css'
 
 const MySkils = () => {
+    
     useEffect(()=>{
         AOS.init({duration:1000})
         },[])
+
   return (
-    <DIV>
+    <DIV id='myskils'>
+
       <h2 className="myskils">My Skills</h2>
       <hr />
        <div className='forMyskillContainer'  id="skills" >
@@ -68,23 +71,22 @@ const DIV=styled.div`
 .forMyskillContainer{
 display: grid;
 grid-template-columns: repeat(2,1fr);
-/* border: 1px solid white; */
 margin-top: 30px;
 gap: 50px;
 
 }
 .myskilCards{
-/* border: 1px solid green; */
-background-color: white;
+
+/* background-color: white; */
+/* background-color: #5aff7f; */
+background-color: #ffffff;
+border: 1px solid green;
 border-radius: 15px;
 }
 .forflexCard{
     display: flex;
     justify-content: center;
-    
     gap: 70px;
-    /* border: 1px solid red; */
-
 }
 ul{
     text-decoration: none;
@@ -107,5 +109,14 @@ h3{
 hr{
     color: #5aff7f;
     
+}
+@media screen and (max-width:850px) {
+    .forMyskillContainer{
+display: grid;
+grid-template-columns: repeat(1,1fr);
+margin-top: 30px;
+gap: 50px;
+
+}
 }
 `
