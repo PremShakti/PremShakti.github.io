@@ -11,7 +11,7 @@ AOS.init({duration:1000})
   return (
     <DIV>
       <div id="about" className="about section"></div>
-      <h2 className="about section">About Me</h2>
+      <h2 className="about section">About me</h2>
       <hr />
       <div className="aboutdiscription" data-aos="fade-up" >
         <p>A dedicated and skilled Full Stack Web Developer with a specialization in React, Redux, MongoDB, Express.js & Node.js, committed to staying current with new technologies and industry trends. Seeking a dynamic and challenging role in a product-driven company that values creativity, collaboration, and professional development.</p>
