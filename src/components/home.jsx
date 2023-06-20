@@ -33,13 +33,13 @@ const Hero=()=>{
     return(
         <DIV>
  <div className="firestImpresionWraper"  id="home">
+  
 <div className="firstImpresion" >
   <Text fontSize='50px'  >Full Staack Web Devloper</Text>
   <Text fontSize="25px" w={"80%"} id="user-detail-intro">{text}</Text>
 </div>
  <img className="home-img"  src="https://drive.google.com/uc?id=1Jaq2cycUh8jqA4DeYH3BwVHDdTMQnyIG" alt="photo" />
  </div>
-  <a href="https://drive.google.com/uc?export=download&id=1ZnxGAI3wRMXvERpKJjIlDGBrdLgnFkUS" id="resume-button-2"> <button >DOWNLOAD RESUME</button></a> 
       
         </DIV>
     );

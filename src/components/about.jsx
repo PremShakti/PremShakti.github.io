@@ -10,7 +10,8 @@ AOS.init({duration:1000})
 },[])
   return (
     <DIV>
-      <div id="about" className="about section"></div>
+      <div id="about" className="about section"><a href="https://drive.google.com/uc?export=download&id=1ZnxGAI3wRMXvERpKJjIlDGBrdLgnFkUS" target="_blank" rel="noopener" id="resume-button-2"> <button >DOWNLOAD RESUME</button></a> </div>
+      
       <h2 className="about section">About me</h2>
       <hr />
       <div className="aboutdiscription" data-aos="fade-up" >
