@@ -16,7 +16,7 @@ const Homemain = () => {
             <div className="bgimageOfsecondimage">
             
                 <About />
-                <Mytimeline />
+                {/* <Mytimeline /> */}
                 <MySkils />
                 <h2 className='about'>My Projects</h2>
                 <hr />
@@ -49,8 +49,8 @@ hr{
     /* background-image: url("https://drive.google.com/uc?id=1KVxWxufjdtWKvWSq9-byhOEQoOG06sxJ"); */
     /* background-color: #cecece; */
     width: 80%;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    /* background-size: 100%; */
+    /* background-repeat: no-repeat; */
     /* border: 1px solid; */
     margin: auto;
     
@@ -61,10 +61,11 @@ hr{
     /* background-image: url("https://drive.google.com/uc?id=1KVxWxufjdtWKvWSq9-byhOEQoOG06sxJ"); */
     /* background-color: #cecece; */
     width: 95%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    /* border: 1px solid; */
+    /* background-size: 100%; */
+    /* background-repeat: no-repeat; */
+   
     margin: auto;
+    position: relative;
     
   }
   hr{

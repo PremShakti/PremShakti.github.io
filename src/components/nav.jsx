@@ -27,7 +27,7 @@ const Navbar = () => {
 console.log(myState)
   return (
     <DIV myState={myState} >
-
+       
       <header  id="nav-menu">
         <Flex h={"80px"} align={"center"} >
 
@@ -69,7 +69,7 @@ console.log(myState)
       {/* nav for phone view */}
 
       <div className="navBarforPhone">
-        <nav className="navPhoneLogo">Prem</nav>
+        <nav className="navPhoneLogo" id="navbar">Prem</nav>
       </div>
 
       <div className="navBarforPhone upDownForphone">
@@ -112,9 +112,12 @@ const DIV = styled.div`
 }
 
 
-
+.upDownForphone{
+  display: none;
+}
 @media screen and (max-width:850px) {
   width: 100%;
+
   header{
       display: none;
     }
@@ -128,6 +131,7 @@ const DIV = styled.div`
     }
 
 .upDownForphone{
+ 
   width: 100%;
   position: fixed;
   z-index: 30000;

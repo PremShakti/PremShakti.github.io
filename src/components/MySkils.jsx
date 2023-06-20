@@ -34,7 +34,7 @@ const MySkils = () => {
     </div>
    
 </div>
-<div className='myskilCards' data-aos="fade-left">
+<div className='myskilCards'data-aos="zoom-in" >
     <h3>Back-end Development</h3>
     <div className='forflexCard'>
     <ul>
@@ -60,7 +60,10 @@ export default MySkils
 
 
 const DIV=styled.div`
+width: 100%;
+
     .myskils{
+       
         text-align: center;
   color: #000000;
   text-shadow: 1px 1px 0px white;
@@ -69,6 +72,7 @@ const DIV=styled.div`
   margin-top: 50px;
     }
 .forMyskillContainer{
+   
 display: grid;
 grid-template-columns: repeat(2,1fr);
 margin-top: 30px;

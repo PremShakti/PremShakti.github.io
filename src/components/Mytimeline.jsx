@@ -8,25 +8,33 @@ const Mytimeline = () => {
   useEffect(()=>{
     AOS.init({duration:1000})
     },[])
+
+
   return (
     <DIV>
-      <h2 className="about"  id="projects">My Timeline</h2>
-<hr />
-<div className="aboutdiscription " data-aos="zoom-in">
-<h2>Web Devlopment</h2>
-<h3>masai school (Remote)</h3>
-<p>While attending a military-style bootcamp to learn web development and data structures, I also acquired numerous soft skills.</p>
+      <h2  className="about"  id="projects">My Timeline</h2>
+       <hr />
+
+
+
+<div className="masai " data-aos="zoom-in">
+<p className='bold'>Full Stack Web Devlopment</p>
+<p className='bold2'>masai school (Remote)</p>
+<p className='description'>While attending a military-style bootcamp to learn web development and data structures, I also acquired numerous soft skills.</p>
 </div>
 
 <div className="educationcollage">
-<div className="aboutdiscription aboutdiscription2 aboutdiscription3" data-aos="fade-right">
-<h3>Intermedite</h3>
-<h3>Koyalchal Sanjay Gandhi Memorial College.</h3>
-
+<div className="left" data-aos="zoom-in">
+<p className='bold'>Intermedite</p>
+<p  className='bold2'>Koyalchal Sanjay Gandhi Memorial College.</p>
+<p className='description'>I have completed my 12th, intermedite from Koyalchal Sanjay Gandhi Memorial College</p>
 </div>
-<div className="aboutdiscription aboutdiscription2 aboutdiscription3 " data-aos="fade-left">
-<h3>Diploma in Electrical Engineering</h3>
-<h3>Birsha Institute of Technology Ranchi Getlatu</h3>
+
+
+<div className="right" data-aos="zoom-in">
+<p className='bold'>Diploma in Electrical Engineering</p>
+<p  className='bold2'>Birsha Institute of Technology Ranchi Getlatu</p>
+<p className='description'>I have completed 3 years full time diploma in electrical engineering from Birsha Institute of Technology Ranchi Getlatu</p>
 </div>
 
 </div>
@@ -37,58 +45,77 @@ const Mytimeline = () => {
 export default Mytimeline
 
 const DIV=styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+hr{
+    color: #5aff7f;
     
-    .about{
-  text-align: center;
-  color: #000000;
-  text-shadow: 1px 1px 0px white;
-  padding-top: 30px;
-  padding-bottom: 10px;
-  margin-top: 50px;
- 
 }
-
-.aboutdiscription{
+.educationcollage{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20%;
+  margin-top: 20px;
+}
+.masai{
+  border: 1px solid;
   width: 40%;
   border-radius: 10px;
-  padding: 25px;
-  margin: auto;
-  margin-top: 30px;
+ padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
  
-  color: black;
- 
-  /* background-color: #5aff7f; */
-  background-color: #ffffff;
-border: 1px solid green;
-  line-height: 30px;
-  
-  font-family: "Gill Sans", sans-serif;
-  
-  
 }
-
-.aboutdiscription h2,h3,p{
+.left,.right{
+  border: 1px solid;
+  padding: 5px;
+ border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.bold{
+  font-weight: bolder;
+  margin: 10px;
+}
+.bold2{
+  font-weight: bold;
+  margin: 10px;
+}
+.description{
   text-align: center;
 }
-hr{
-  color: #5aff7f;
 
-}
-
-
-.educationcollage{
- display: flex;
- justify-content: center;
- align-items: center;
- gap: 20px;
-
-}
 @media screen and (max-width:850px) {
   .educationcollage{
- display: grid;
-grid-template-columns: repeat(1,fr);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
 
+.masai{
+  border: 1px solid;
+  width: 96%;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  border-radius: 10px;
+ padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
 }
 }
+
 
 `
