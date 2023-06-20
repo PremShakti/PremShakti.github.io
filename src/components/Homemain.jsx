@@ -13,7 +13,7 @@ const Homemain = () => {
     return (
         <DIV>
              <Hero />
-            <div className="bgimageOfsecondimage">
+            <div className="bgimageOfsecondimage" id='projects'>
             
                 <About />
                 {/* <Mytimeline /> */}
