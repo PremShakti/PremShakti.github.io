@@ -68,6 +68,7 @@ const arr=[
 
    <div className='detailbar'>
    <h3 className='project-title'>{e.name}</h3>
+   <p className='project-description'>this is the project that i created on masai</p>
 
    <div className='iconContainer'> 
       <a href={e.githublink}><AiFillGithub/></a> 

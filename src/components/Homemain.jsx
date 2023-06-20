@@ -8,6 +8,7 @@ import Hero from './home'
 import Contact from './contact'
 import Footer from './Footer'
 import Myprojects from './Myprojects'
+import GitHub from './GitHub'
 
 const Homemain = () => {
     return (
@@ -21,6 +22,7 @@ const Homemain = () => {
                 <h2 className='about'>My Projects</h2>
                 <hr />
                 <Myprojects/>
+                <GitHub/>
             </div>
             <Contact/>
             <Footer/>
