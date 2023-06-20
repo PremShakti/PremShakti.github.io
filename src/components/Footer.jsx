@@ -17,8 +17,8 @@ const Footer = () => {
                     <div className='addresBar'>
 
                    
-                <p>CONTACT ME</p>
-                <p className='address'>4657 Franklin Avenue, ARCH CAPE 
+                <p >CONTACT ME</p>
+                <p id="contact-phone" className='address'>4657 Franklin Avenue, ARCH CAPE 
                    +361-883-3218 
                     hello@jac-co.com</p>
                     {/* <button className='downloadresumaBTN'>DOWNLOAD RESUME</button> */}

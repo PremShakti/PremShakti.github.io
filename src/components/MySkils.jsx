@@ -34,10 +34,10 @@ const MySkils = () => {
     </div>
    
 </div>
-<div className='myskilCards'data-aos="zoom-in" >
+<div className='skills-card'data-aos="zoom-in" >
     <h3>Back-end Development</h3>
     <div className='forflexCard'>
-    <ul>
+    <ul className='skills-card-img'>
         <li>MongoDB</li>
         <li>Node</li>
         <li>Git/GitHub</li>
@@ -79,7 +79,7 @@ margin-top: 30px;
 gap: 50px;
 
 }
-.myskilCards{
+.skills-card{
 
 /* background-color: white; */
 /* background-color: #5aff7f; */

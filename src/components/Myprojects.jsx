@@ -67,7 +67,7 @@ const arr=[
 
 
    <div className='detailbar'>
-   <h3>{e.name}</h3>
+   <h3 className='project-title'>{e.name}</h3>
 
    <div className='iconContainer'> 
       <a href={e.githublink}><AiFillGithub/></a> 

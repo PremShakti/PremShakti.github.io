@@ -37,10 +37,11 @@ console.log(myState)
 
           <Flex w={"50%"} h={"100%"} align={"center"}  >
             <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"} ><Link to="home" spy={true} smooth={true} duration={500} className="nav-link home" >Home</Link></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="contact" spy={true} smooth={true} duration={500}className="nav-link contact" >Contact</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="contact" spy={true} smooth={true} duration={500}className="nav-link contact">Contact</Link></Flex>
             <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="about" spy={true} smooth={true} duration={500} className="nav-link about" >About</Link></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="myskils" spy={true} smooth={true} duration={500} className=".nav-link.skills">My skils</Link></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="section1" spy={true} smooth={true} duration={500} className="nav-link projects" >Download Resume</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="myskils" spy={true} smooth={true} duration={500} className="nav-link skills">My skils</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="myskils" spy={true} smooth={true} duration={500} className="nav-link skills" id="contact-email">Fire Me a Mail</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="section1" spy={true} smooth={true} duration={500} className="nav-link projects" id="resume-button-1" >Download Resume</Link></Flex>
           </Flex>
         </Flex>
 
