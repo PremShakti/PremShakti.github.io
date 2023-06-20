@@ -35,9 +35,10 @@ const MySkils = () => {
    
 </div>
 <div className='skills-card'data-aos="zoom-in" >
+    <img src="" alt="" className='skills-card-img'/>
     <h3>Back-end Development</h3>
     <div className='forflexCard'>
-    <ul className='skills-card-img'>
+    <ul >
         <li>MongoDB</li>
         <li>Node</li>
         <li>Git/GitHub</li>

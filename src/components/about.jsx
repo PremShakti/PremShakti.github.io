@@ -12,7 +12,7 @@ AOS.init({duration:1000})
     <DIV>
       <div id="about" className="about section"><a href="https://drive.google.com/uc?export=download&id=1ZnxGAI3wRMXvERpKJjIlDGBrdLgnFkUS" target="_blank" rel="noopener" id="resume-button-2"> <button >DOWNLOAD RESUME</button></a> </div>
       
-      <h2 className="about section">About me</h2>
+      <h2 className="about section" id="user-detail-intro" >About me</h2>
       <hr />
       <div className="aboutdiscription" data-aos="fade-up" >
         <p>A dedicated and skilled Full Stack Web Developer with a specialization in React, Redux, MongoDB, Express.js & Node.js, committed to staying current with new technologies and industry trends. Seeking a dynamic and challenging role in a product-driven company that values creativity, collaboration, and professional development.</p>

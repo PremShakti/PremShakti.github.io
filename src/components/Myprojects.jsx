@@ -71,7 +71,7 @@ const arr=[
    <p className='project-description'>this is the project that i created on masai</p>
 
    <div className='iconContainer'> 
-      <a href={e.githublink}><AiFillGithub/></a> 
+      <a href={e.githublink} className='project-github-link'  ><AiFillGithub/></a> 
       <a href={e.netlifylink}><SiNetlify/></a> 
    </div>
 

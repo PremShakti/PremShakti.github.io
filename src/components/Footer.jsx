@@ -25,7 +25,7 @@ const Footer = () => {
                     <Btn name={"Download Resume"}/>
                     <div className='socialmeadiaIcon'>
                        <div ><AiFillLinkedin/></div>
-                       <div><AiFillGithub/></div>
+                       <div id="contact-github"><AiFillGithub/></div>
                        <div><AiFillLinkedin/></div>
 
                          </div>
