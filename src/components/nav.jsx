@@ -32,15 +32,15 @@ console.log(myState)
         <Flex h={"80px"} align={"center"} >
 
           <Flex w={"50%"} h={"100%"} align={"center"} pl={"5%"}>
-            <Text>Prem</Text>
+            <Text id="user-detail-name">Prem</Text>
           </Flex>
 
           <Flex w={"50%"} h={"100%"} align={"center"}  >
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"} ><Link to="home" spy={true} smooth={true} duration={500} >Home</Link></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="contact" spy={true} smooth={true} duration={500} >Contact</Link></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="about" spy={true} smooth={true} duration={500} >About</Link></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="myskils" spy={true} smooth={true} duration={500}>My skils</Link></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="section1" spy={true} smooth={true} duration={500} >Download Resume</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"} ><Link to="home" spy={true} smooth={true} duration={500} className="nav-link home" >Home</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="contact" spy={true} smooth={true} duration={500}className="nav-link contact" >Contact</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="about" spy={true} smooth={true} duration={500} className="nav-link about" >About</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="myskils" spy={true} smooth={true} duration={500} className=".nav-link.skills">My skils</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="section1" spy={true} smooth={true} duration={500} className="nav-link projects" >Download Resume</Link></Flex>
           </Flex>
         </Flex>
 

@@ -61,7 +61,7 @@ const arr=[
        
     {arr.map((e)=>(
      
-<div className='mainCard'>
+<div className='project-card'  >
    <div className='cardOfproject'>
    <img src={e.img} alt="project photo" />
 
@@ -95,7 +95,7 @@ display: grid;
 grid-template-columns: repeat(3,1fr);
 gap: 20px;
 
-.mainCard{
+.project-card{
     
     border-radius: 10px;
     display: flex;
@@ -115,7 +115,7 @@ gap: 20px;
     transition: transform scale;
     transition-duration: 300ms;
 }
-.mainCard:hover img{
+.project-card:hover img{
     transform: scale(1.2);
 }
 
@@ -157,7 +157,7 @@ a:hover{
     width: 100%;
 display: grid;
 grid-template-columns: repeat(2,1fr);
-.mainCard{
+.project-card{
     
     border-radius: 10px;
     display: flex;
