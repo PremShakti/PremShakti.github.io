@@ -15,7 +15,7 @@ const MySkils = () => {
       <h2 className="myskils">My Skills</h2>
       <hr />
        <div className='forMyskillContainer'  id="skills" >
-<div className='skills-card' className='myskilCards ' data-aos="fade-right">
+<div className='skills-card'  data-aos="fade-right">
     <h3>Front-end Development</h3>
     <div className='forflexCard'>
     <ul>
