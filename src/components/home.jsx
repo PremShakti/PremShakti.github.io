@@ -39,7 +39,7 @@ const Hero=()=>{
 </div>
  <img className="home-img"  src="https://drive.google.com/uc?id=1Jaq2cycUh8jqA4DeYH3BwVHDdTMQnyIG" alt="photo" />
  </div>
- <button id="resume-button-2">DOWNLOAD RESUME</button>
+  <a href="https://drive.google.com/uc?export=download&id=1ZnxGAI3wRMXvERpKJjIlDGBrdLgnFkUS" id="resume-button-2"> <button >DOWNLOAD RESUME</button></a> 
       
         </DIV>
     );

@@ -4,7 +4,7 @@ const GitHub = () => {
   return (
     <div>
 
-        <a href="https://git.io/streak-stats" target="_blank">
+        <a href="https://git.io/streak-stats" target="_blank" className='react-activity-calendar'>
             <img
               id="github-stats-card"
               src="https://github-readme-streak-stats.herokuapp.com?user=PremShakti&theme=vision-friendly-dark"

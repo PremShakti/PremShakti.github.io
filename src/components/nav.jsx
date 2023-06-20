@@ -41,7 +41,7 @@ console.log(myState)
             <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="about" spy={true} smooth={true} duration={500} className="nav-link about" >About</Link></Flex>
             <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="myskils" spy={true} smooth={true} duration={500} className="nav-link skills">My skils</Link></Flex>
             <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="myskils" spy={true} smooth={true} duration={500} className="nav-link skills" id="contact-email">Fire Me a Mail</Link></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="section1" spy={true} smooth={true} duration={500} className="nav-link projects" id="resume-button-1" >Download Resume</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}> <a href="https://drive.google.com/uc?export=download&id=1ZnxGAI3wRMXvERpKJjIlDGBrdLgnFkUS" id="resume-button-1" >Download Resume</a> </Flex>
           </Flex>
         </Flex>
 
