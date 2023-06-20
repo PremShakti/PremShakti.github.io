@@ -37,7 +37,7 @@ const Hero=()=>{
   <Text fontSize='50px' id='user-detail-intro' >Full Staack Web Devloper</Text>
   <Text fontSize="25px" w={"80%"} id="user-detail-intro">{text}</Text>
 </div>
- <img className="home-img"  src="https://drive.google.com/uc?id=1Jaq2cycUh8jqA4DeYH3BwVHDdTMQnyIG" alt="photo" className="ProfileIMG"/>
+ <img className="home-img"  src="https://drive.google.com/uc?id=1Jaq2cycUh8jqA4DeYH3BwVHDdTMQnyIG" alt="photo" />
  </div>
       
         </DIV>
@@ -47,7 +47,7 @@ const Hero=()=>{
 export default Hero;
 
 const DIV=styled.div`
-.ProfileIMG{
+.home-img{
     position: absolute;
     right: 5%;
     bottom: 0px;
@@ -71,7 +71,7 @@ const DIV=styled.div`
 
   @media screen and (max-width:855px) {
     
-    .ProfileIMG{
+    .home-img{
       display: none;
     } 
 
