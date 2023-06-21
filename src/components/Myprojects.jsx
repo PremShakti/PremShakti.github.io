@@ -72,7 +72,7 @@ const arr=[
 
    <div className='iconContainer'> 
       <a href={e.githublink} className='project-github-link'  ><AiFillGithub/></a> 
-      <a href={e.netlifylink}><SiNetlify/></a> 
+      <a href={e.netlifylink} className='project-deployed-link'><SiNetlify/></a> 
    </div>
 
    </div>

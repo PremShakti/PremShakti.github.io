@@ -11,6 +11,7 @@ const MySkils = () => {
 
   return (
     <DIV id='myskils'>
+        <img src=""alt="" className='skills-card-img '/>
 
       <h2 className="myskils">My Skills</h2>
       <hr />

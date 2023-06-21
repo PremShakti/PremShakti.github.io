@@ -40,7 +40,7 @@ console.log(myState)
             <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}className="nav-link contact"><Link to="contact" spy={true} smooth={true} duration={500}>Contact</Link></Flex>
             <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}className="nav-link about"><Link to="about" spy={true} smooth={true} duration={500}  >About</Link></Flex>
             <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}className="nav-link skills"><Link to="myskils" spy={true} smooth={true} duration={500} >My skils</Link></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}className="nav-link.projects"><Link to="projects" spy={true} smooth={true} duration={500} >Projects</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}className="nav-link projects"><Link to="projects" spy={true} smooth={true} duration={500} >Projects</Link></Flex>
             <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"} id="contact-email"><Link to="myskils" spy={true} smooth={true} duration={500} >Fire Me a Mail</Link></Flex>
              <a href="https://drive.google.com/uc?export=download&id=1ZnxGAI3wRMXvERpKJjIlDGBrdLgnFkUS" id="resume-button-1" class="nav-link resume">Download Resume</a> 
           </Flex>
