@@ -10,8 +10,8 @@ AOS.init({duration:1000})
 },[])
   return (
     <DIV>
-      <div id="about">
-      <h2 className="about section" >About</h2>
+      <div id="about" className="about section" >
+      <h2 >About</h2>
       <div ><a href="https://drive.google.com/uc?export=download&id=1ZnxGAI3wRMXvERpKJjIlDGBrdLgnFkUS" target="_blank" rel="noopener" id="resume-button-2"> <button >DOWNLOAD RESUME</button></a> </div>
       
       <hr />

@@ -10,10 +10,10 @@ const MySkils = () => {
         },[])
 
   return (
-    <DIV id='myskils'>
-        <img src=""alt="" className='skills-card-img '/>
-
+    <DIV id='myskils' className="myskils">
       <h2 className="myskils">My Skills</h2>
+        <img src="https://images.pexels.com/photos/4348403/pexels-photo-4348403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"alt="" className='skills-card-img'/>
+
       <hr />
        <div className='forMyskillContainer'  id="skills" >
 <div className='skills-card'  data-aos="fade-right">
