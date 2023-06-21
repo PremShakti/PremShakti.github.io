@@ -61,7 +61,7 @@ const arr=[
        
     {arr.map((e)=>(
      
-<div className='project-card'  >
+<div  id="projects" className='project-card'  >
    <div className='cardOfproject'>
    <img src={e.img} alt="project photo" />
 

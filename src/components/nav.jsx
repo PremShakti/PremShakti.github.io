@@ -28,21 +28,21 @@ console.log(myState)
   return (
     <DIV myState={myState} >
        
-      <header  id="nav-menu">
+      <header  >
         <Flex h={"80px"} align={"center"} >
 
           <Flex w={"50%"} h={"100%"} align={"center"} pl={"5%"}>
             <Text id="user-detail-name">Prem</Text>
           </Flex>
 
-          <Flex w={"50%"} h={"100%"} align={"center"}  >
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"} ><Link to="home" spy={true} smooth={true} duration={500} className="nav-link home" >Home</Link></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="contact" spy={true} smooth={true} duration={500}className="nav-link contact">Contact</Link></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="about" spy={true} smooth={true} duration={500} className="nav-link about" >About</Link></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="myskils" spy={true} smooth={true} duration={500} className="nav-link skills">My skils</Link></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="myskils" spy={true} smooth={true} duration={500} className="nav-link.projects">Projects</Link></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}><Link to="myskils" spy={true} smooth={true} duration={500}  id="contact-email">Fire Me a Mail</Link></Flex>
-            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}> <a href="https://drive.google.com/uc?export=download&id=1ZnxGAI3wRMXvERpKJjIlDGBrdLgnFkUS" id="resume-button-1" >Download Resume</a> </Flex>
+          <Flex w={"50%"} h={"100%"} align={"center"} id="nav-menu" >
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"} className="nav-link home" ><Link to="home" spy={true} smooth={true} duration={500}  >Home</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}className="nav-link contact"><Link to="contact" spy={true} smooth={true} duration={500}>Contact</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}className="nav-link about"><Link to="about" spy={true} smooth={true} duration={500}  >About</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}className="nav-link skills"><Link to="myskils" spy={true} smooth={true} duration={500} >My skils</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"}className="nav-link.projects"><Link to="projects" spy={true} smooth={true} duration={500} >Projects</Link></Flex>
+            <Flex h={"100%"} pl={"19px"} pr={"19px"} align={"center"} borderLeft={"1px solid black"} id="contact-email"><Link to="myskils" spy={true} smooth={true} duration={500} >Fire Me a Mail</Link></Flex>
+             <a href="https://drive.google.com/uc?export=download&id=1ZnxGAI3wRMXvERpKJjIlDGBrdLgnFkUS" id="resume-button-1" class="nav-link resume">Download Resume</a> 
           </Flex>
         </Flex>
 

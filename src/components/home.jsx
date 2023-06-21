@@ -35,7 +35,7 @@ const Hero=()=>{
  <div className="firestImpresionWraper"  id="home">
   
 <div className="firstImpresion" >
-  <Text fontSize='50px'  >Full Staack Web Devloper</Text>
+  <Text fontSize='50px' id="user-detail-name" >Full Staack Web Devloper</Text>
   <Text fontSize="25px" w={"80%"} id="user-detail-intro">{text}</Text>
 </div>
  <img className="home-img"  src="https://drive.google.com/uc?id=1Jaq2cycUh8jqA4DeYH3BwVHDdTMQnyIG" alt="photo" />
